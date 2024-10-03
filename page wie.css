@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #FFCCE5, #D9B3FF);
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #FF99CC, #CC66FF);
+    color: white;
+    padding: 80px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.header-image {
+    width:100%;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+section {
+    padding: 30px;
+    margin: 20px auto; /* Centers the section on the page */
+    max-width: 900px; /* Optional: limit the maximum width */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center contents of the section */
+    text-align: center; /* Center text inside the sections */
+}
+
+nav {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+h2 {
+    color: #9933FF;
+    margin-bottom: 20px;
+}
+
+.activity-image,
+.award-image,
+.team-image,
+.logo-image {
+    max-width: 100px;
+    margin: 10px;
+}
+
+#photo-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%; /* Adjust width as needed */
+    max-width: 400px; /* Maximum width for the carousel */
+    margin: 0 auto; /* Center the carousel */
+    overflow: hidden; /* Hide overflow */
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+}
+
+.carousel img {
+    width: 100%; /* Full width of the carousel */
+    display: none; /* Initially hide all images */
+    transition: opacity 0.5s ease-in-out; /* Smooth opacity transition */
+}
+
+.carousel img.active {
+    display: block; /* Show only the active image */
+    opacity: 1; /* Fully visible */
+}
+
+.carousel img:not(.active) {
+    opacity: 0; /* Invisible for inactive images */
+}
+
+/* Button Styles */
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for visibility */
+    border: none;
+    cursor: pointer;
+    font-size: 18px; /* Adjust as needed */
+    padding: 10px; /* Add padding for better click area */
+    z-index: 1; /* Ensure buttons are above images */
+}
+
+button.prev {
+    left: 10px; /* Position the left button */
+}
+
+button.next {
+    right: 10px; /* Position the right button */
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member {
+    margin: 10px;
+}
+
+footer {
+    background-color: #CC66FF;
+    color: white;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
